@@ -1,42 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.1 on win32)" generated="2024-08-04T18:38:28.304207" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.11.1 on win32)" generated="2024-08-04T18:48:48.184228" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon Testes" source="C:\Users\SevenProGion\Videos\ws-IbaGaia\AutomationHands-on\RobotFramework\WebTestingRobotFramework\amazon_testes.robot">
 <test id="s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="12">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-08-04T18:38:28.525588" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
+<msg time="2024-08-04T18:48:48.414250" level="INFO">Opening browser 'chrome' to base url 'None'.</msg>
 <arg>browser=chrome</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-08-04T18:38:28.525588" elapsed="1.528450"/>
+<status status="PASS" start="2024-08-04T18:48:48.414250" elapsed="1.603950"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-08-04T18:38:30.054038" elapsed="0.380918"/>
+<status status="PASS" start="2024-08-04T18:48:50.019205" elapsed="0.385655"/>
 </kw>
-<status status="PASS" start="2024-08-04T18:38:28.524395" elapsed="1.910561"/>
+<status status="PASS" start="2024-08-04T18:48:48.413145" elapsed="1.991715"/>
 </kw>
 <kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-08-04T18:38:30.437973" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
+<msg time="2024-08-04T18:48:50.405863" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-08-04T18:38:30.436972" elapsed="18.155773"/>
+<status status="PASS" start="2024-08-04T18:48:50.405863" elapsed="9.652971"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-08-04T18:38:48.592745" elapsed="0.146363"/>
+<status status="PASS" start="2024-08-04T18:49:00.060094" elapsed="0.143311"/>
 </kw>
-<status status="PASS" start="2024-08-04T18:38:30.435959" elapsed="18.303149"/>
+<status status="PASS" start="2024-08-04T18:48:50.404860" elapsed="9.798545"/>
+</kw>
+<kw name="Entrar no menu &quot;Eletrônicos&quot;" owner="amazon_resources">
+<kw name="Click Element" owner="SeleniumLibrary">
+<msg time="2024-08-04T18:49:00.204426" level="INFO">Clicking element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]'.</msg>
+<arg>locator=${MENU_ELETRONICOS}</arg>
+<doc>Click the element identified by ``locator``.</doc>
+<status status="PASS" start="2024-08-04T18:49:00.204426" elapsed="7.056704"/>
+</kw>
+<status status="PASS" start="2024-08-04T18:49:00.203405" elapsed="7.058757"/>
+</kw>
+<kw name="Verificar se aparece a frase &quot;Eletrônicos e Tecnologia&quot;" owner="amazon_resources">
+<kw name="Wait Until Page Contains" owner="SeleniumLibrary">
+<arg>text=${TEXTO_HEADER_ELETRONICOS}</arg>
+<doc>Waits until ``text`` appears on the current page.</doc>
+<status status="PASS" start="2024-08-04T18:49:07.263621" elapsed="0.040132"/>
+</kw>
+<kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
+<arg>locator=${HEADER_ELETRONICOS}</arg>
+<doc>Waits until the element ``locator`` is visible.</doc>
+<status status="PASS" start="2024-08-04T18:49:07.303753" elapsed="0.048517"/>
+</kw>
+<status status="PASS" start="2024-08-04T18:49:07.262162" elapsed="0.090108"/>
 </kw>
 <doc>Esse teste Verifica o menu electrônicos do site Amazon.com.br
 e Verifica a categoria Computadores e Informática</doc>
 <tag>categorias</tag>
 <tag>menus</tag>
-<status status="PASS" start="2024-08-04T18:38:28.523395" elapsed="20.215713"/>
+<status status="PASS" start="2024-08-04T18:48:48.411637" elapsed="18.940633"/>
 </test>
 <doc>Essa suite testa o  site de Amazon.com.br</doc>
-<status status="PASS" start="2024-08-04T18:38:28.316719" elapsed="20.423642"/>
+<status status="PASS" start="2024-08-04T18:48:48.186394" elapsed="19.166885"/>
 </suite>
 <statistics>
 <total>
