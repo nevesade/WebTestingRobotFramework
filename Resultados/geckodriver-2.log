@@ -1,0 +1,21 @@
+1722795378531	geckodriver	INFO	Listening on 127.0.0.1:35148
+1722795381582	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "--marionette" "--remote-debugging-port" "35149" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\SEVENP~1\\AppData\\Local\\Temp\\rust_mozprofilez0i0Za"
+console.warn: services.settings: Ignoring preference override of remote settings server
+console.warn: services.settings: Allow by setting MOZ_REMOTE_SETTINGS_DEVTOOLS=1 in the environment
+Dynamically enable window occlusion 0
+1722795381849	Marionette	INFO	Marionette enabled
+1722795381972	Marionette	INFO	Listening on port 35157
+WebDriver BiDi listening on ws://127.0.0.1:35149
+Read port: 35157
+1722795382107	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+DevTools listening on ws://127.0.0.1:35149/devtools/browser/450b3472-4f9a-4631-a1cf-96131e46f75d
+JavaScript warning: https://www.amazon.com.br/, line 1981: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+JavaScript warning: https://www.amazon.com.br/s/ref=nb_sb_noss?__mk_pt_BR=%C3%85M%C3%85%C5%BD%C3%95%C3%91&url=search-alias%3Daps&field-keywords=Xbox+Series+S, line 6483: WEBGL_debug_renderer_info is deprecated in Firefox and will be removed. Please use RENDERER.
+1722795396471	Marionette	INFO	Stopped listening on port 35157
+JavaScript warning: https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ZOs518g9OP1y3q9VKZqJCVl6Kvg1Jrwbi7wCisq6wQz9gntKNe1TbAA31RW8qs6z7qVjtmkcVj8EGm61zlXVlMsf3vHlVoIldWZl9KwnlRw2V3MESXrxAEst1BQuUR1NYRcYnQ5TT3XZZVtUxqkoY3dcexAmK_Z_rThD0r8X6O_5gypv9FsxyEduFYVhN59BRUotdGGoEZGzbXKxR4aTng, line 2841: Script terminated by timeout at:
+CalculateNewProcessedItemsBySelector@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ZOs518g9OP1y3q9VKZqJCVl6Kvg1Jrwbi7wCisq6wQz9gntKNe1TbAA31RW8qs6z7qVjtmkcVj8EGm61zlXVlMsf3vHlVoIldWZl9KwnlRw2V3MESXrxAEst1BQuUR1NYRcYnQ5TT3XZZVtUxqkoY3dcexAmK_Z_rThD0r8X6O_5gypv9FsxyEduFYVhN59BRUotdGGoEZGzbXKxR4aTng:2841:29
+DeferredProcessCssRules@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ZOs518g9OP1y3q9VKZqJCVl6Kvg1Jrwbi7wCisq6wQz9gntKNe1TbAA31RW8qs6z7qVjtmkcVj8EGm61zlXVlMsf3vHlVoIldWZl9KwnlRw2V3MESXrxAEst1BQuUR1NYRcYnQ5TT3XZZVtUxqkoY3dcexAmK_Z_rThD0r8X6O_5gypv9FsxyEduFYVhN59BRUotdGGoEZGzbXKxR4aTng:2855:36
+GetDeferredHandlerImpl@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ZOs518g9OP1y3q9VKZqJCVl6Kvg1Jrwbi7wCisq6wQz9gntKNe1TbAA31RW8qs6z7qVjtmkcVj8EGm61zlXVlMsf3vHlVoIldWZl9KwnlRw2V3MESXrxAEst1BQuUR1NYRcYnQ5TT3XZZVtUxqkoY3dcexAmK_Z_rThD0r8X6O_5gypv9FsxyEduFYVhN59BRUotdGGoEZGzbXKxR4aTng:2865:79
+TimerCallback@https://ff.kis.v2.scr.kaspersky-labs.com/FD126C42-EBFA-4E12-B309-BB3FDD723AC1/main.js?attr=ZOs518g9OP1y3q9VKZqJCVl6Kvg1Jrwbi7wCisq6wQz9gntKNe1TbAA31RW8qs6z7qVjtmkcVj8EGm61zlXVlMsf3vHlVoIldWZl9KwnlRw2V3MESXrxAEst1BQuUR1NYRcYnQ5TT3XZZVtUxqkoY3dcexAmK_Z_rThD0r8X6O_5gypv9FsxyEduFYVhN59BRUotdGGoEZGzbXKxR4aTng:372:21
+
+Dynamically enable window occlusion 1

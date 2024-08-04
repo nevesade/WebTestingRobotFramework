@@ -2,6 +2,7 @@
 Library    SeleniumLibrary
 
 *** Variables ***
+${BROSWER}    firefox
 ${URL}    https://www.amazon.com.br
 ${MENU_ELETRONICOS}    //a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&node=16209062011&ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]
 ${HEADER_ELETRONICOS}    //h1[contains(.,'Eletrônicos e Tecnologia')]
@@ -9,7 +10,7 @@ ${TEXTO_HEADER_ELETRONICOS}    Eletrônicos e Tecnologia
 
 *** Keywords ***
 Abrir o navegador
-        Open Browser    browser=chrome
+        Open Browser    browser=${BROSWER}
         Maximize Browser Window
 
 Fechar o navegador
