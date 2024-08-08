@@ -1,184 +1,186 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 7.0.1 (Python 3.11.1 on win32)" generated="2024-08-04T20:15:59.914836" rpa="false" schemaversion="5">
+<robot generator="Robot 7.0.1 (Python 3.11.1 on win32)" generated="2024-08-08T19:36:14.318355" rpa="false" schemaversion="5">
 <suite id="s1" name="Amazon Testes" source="C:\Users\SevenProGion\Videos\ws-IbaGaia\AutomationHands-on\RobotFramework\WebTestingRobotFramework\amazon_testes.robot">
 <test id="s1-t1" name="Caso de Teste 01 - Acesso ao menu &quot;Eletrônicos&quot;" line="12">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-08-04T20:16:00.112891" level="INFO">Opening browser 'firefox' to base url 'None'.</msg>
+<msg time="2024-08-08T19:36:14.781875" level="INFO">Opening browser 'firefox' to base url 'None'.</msg>
+<msg time="2024-08-08T19:36:18.502951" level="WARN">The geckodriver version (0.34.0) detected in PATH at C:\Users\SevenProGion\AppData\Local\Programs\Python\Python311\Scripts\geckodriver.exe might not be compatible with the detected firefox version (129.0.0.2295); currently, geckodriver 0.35.0 is recommended for firefox 129.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>browser=${BROSWER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-08-04T20:16:00.112891" elapsed="5.980960"/>
+<status status="PASS" start="2024-08-08T19:36:14.781875" elapsed="10.451442"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-08-04T20:16:06.093851" elapsed="0.268366"/>
+<status status="PASS" start="2024-08-08T19:36:25.233317" elapsed="0.265749"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:00.111884" elapsed="6.251330"/>
+<status status="PASS" start="2024-08-08T19:36:14.781875" elapsed="10.720212"/>
 </kw>
 <kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-08-04T20:16:06.364347" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
+<msg time="2024-08-08T19:36:25.503918" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-08-04T20:16:06.363214" elapsed="5.075747"/>
+<status status="PASS" start="2024-08-08T19:36:25.503326" elapsed="12.818017"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-08-04T20:16:11.440309" elapsed="0.026936"/>
+<status status="PASS" start="2024-08-08T19:36:38.321343" elapsed="0.280966"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:06.363214" elapsed="5.104031"/>
+<status status="PASS" start="2024-08-08T19:36:25.503069" elapsed="13.099240"/>
 </kw>
 <kw name="Verificar se o título da página fica &quot;Amazon.com.br | Tudo pra você, de A a Z.&quot;" owner="amazon_resources" source_name="Verificar se o título da página fica &quot;${TITULO}&quot;">
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-04T20:16:11.471425" level="INFO">Page title is 'Amazon.com.br | Tudo pra você, de A a Z.'.</msg>
+<msg time="2024-08-08T19:36:38.612767" level="INFO">Page title is 'Amazon.com.br | Tudo pra você, de A a Z.'.</msg>
 <arg>title=${TITULO}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-08-04T20:16:11.467245" elapsed="0.004180"/>
+<status status="PASS" start="2024-08-08T19:36:38.602309" elapsed="0.010458"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:11.467245" elapsed="0.004180"/>
+<status status="PASS" start="2024-08-08T19:36:38.602309" elapsed="0.010458"/>
 </kw>
 <kw name="Entrar no menu &quot;Eletrônicos&quot;" owner="amazon_resources">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-08-04T20:16:11.471425" level="INFO">Clicking element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]'.</msg>
+<msg time="2024-08-08T19:36:38.614907" level="INFO">Clicking element '//a[@href='/Eletronicos-e-Tecnologia/b/?ie=UTF8&amp;node=16209062011&amp;ref_=nav_cs_electronics'][contains(.,'Eletrônicos')]'.</msg>
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-04T20:16:11.471425" elapsed="3.704965"/>
+<status status="PASS" start="2024-08-08T19:36:38.614907" elapsed="11.255148"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:11.471425" elapsed="3.704965"/>
+<status status="PASS" start="2024-08-08T19:36:38.614907" elapsed="11.255148"/>
 </kw>
 <kw name="Verificar se aparece a frase &quot;Eletrônicos e Tecnologia&quot;" owner="amazon_resources" source_name="Verificar se aparece a frase &quot;${FRASE}&quot;">
 <kw name="Wait Until Page Contains" owner="SeleniumLibrary">
 <arg>text=${FRASE}</arg>
 <doc>Waits until ``text`` appears on the current page.</doc>
-<status status="PASS" start="2024-08-04T20:16:15.177390" elapsed="0.038503"/>
+<status status="PASS" start="2024-08-08T19:36:49.870055" elapsed="0.020682"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${HEADER_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-08-04T20:16:15.217202" elapsed="0.022332"/>
+<status status="PASS" start="2024-08-08T19:36:49.890737" elapsed="0.024376"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:15.177390" elapsed="0.063143"/>
+<status status="PASS" start="2024-08-08T19:36:49.870055" elapsed="0.045058"/>
 </kw>
 <kw name="Verificar se o título da página fica &quot;Eletrônicos e Tecnologia | Amazon.com.br&quot;" owner="amazon_resources" source_name="Verificar se o título da página fica &quot;${TITULO}&quot;">
 <kw name="Title Should Be" owner="SeleniumLibrary">
-<msg time="2024-08-04T20:16:15.242799" level="INFO">Page title is 'Eletrônicos e Tecnologia | Amazon.com.br'.</msg>
+<msg time="2024-08-08T19:36:49.923253" level="INFO">Page title is 'Eletrônicos e Tecnologia | Amazon.com.br'.</msg>
 <arg>title=${TITULO}</arg>
 <doc>Verifies that the current page title equals ``title``.</doc>
-<status status="PASS" start="2024-08-04T20:16:15.240533" elapsed="0.002266"/>
+<status status="PASS" start="2024-08-08T19:36:49.915113" elapsed="0.008140"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:15.240533" elapsed="0.002266"/>
+<status status="PASS" start="2024-08-08T19:36:49.915113" elapsed="0.008140"/>
 </kw>
 <kw name="Verificar se aparece a categoria &quot;Computadores e Informática&quot;" owner="amazon_resources" source_name="Verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-08-04T20:16:15.263498" level="INFO">Element '//a[@aria-label='Computadores e Informática']' is displayed.</msg>
+<msg time="2024-08-08T19:36:49.937352" level="INFO">Element '//a[@aria-label='Computadores e Informática']' is displayed.</msg>
 <arg>locator=//a[@aria-label='${NOME_CATEGORIA}']</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-08-04T20:16:15.243883" elapsed="0.019615"/>
+<status status="PASS" start="2024-08-08T19:36:49.924340" elapsed="0.013012"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:15.243883" elapsed="0.019615"/>
+<status status="PASS" start="2024-08-08T19:36:49.924340" elapsed="0.013012"/>
 </kw>
 <kw name="Verificar se aparece a categoria &quot;Tablets&quot;" owner="amazon_resources" source_name="Verificar se aparece a categoria &quot;${NOME_CATEGORIA}&quot;">
 <kw name="Element Should Be Visible" owner="SeleniumLibrary">
-<msg time="2024-08-04T20:16:15.286596" level="INFO">Element '//a[@aria-label='Tablets']' is displayed.</msg>
+<msg time="2024-08-08T19:36:49.952548" level="INFO">Element '//a[@aria-label='Tablets']' is displayed.</msg>
 <arg>locator=//a[@aria-label='${NOME_CATEGORIA}']</arg>
 <doc>Verifies that the element identified by ``locator`` is visible.</doc>
-<status status="PASS" start="2024-08-04T20:16:15.263498" elapsed="0.023098"/>
+<status status="PASS" start="2024-08-08T19:36:49.937352" elapsed="0.015196"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:15.263498" elapsed="0.023098"/>
+<status status="PASS" start="2024-08-08T19:36:49.937352" elapsed="0.015196"/>
 </kw>
 <kw name="Fechar o navegador" owner="amazon_resources" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-08-04T20:16:15.430264" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-4.png"&gt;&lt;img src="selenium-screenshot-4.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-08T19:36:50.136995" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-1.png"&gt;&lt;img src="selenium-screenshot-1.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-08-04T20:16:15.287709" elapsed="0.143818"/>
+<status status="PASS" start="2024-08-08T19:36:49.952548" elapsed="0.184447"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-08-04T20:16:15.431527" elapsed="2.804297"/>
+<status status="PASS" start="2024-08-08T19:36:50.143499" elapsed="3.291485"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:15.287709" elapsed="2.948115"/>
+<status status="PASS" start="2024-08-08T19:36:49.952548" elapsed="3.482436"/>
 </kw>
 <doc>Esse teste Verifica o menu electrônicos do site Amazon.com.br
 e Verifica a categoria Computadores e Informática</doc>
 <tag>categorias</tag>
 <tag>menus</tag>
-<status status="PASS" start="2024-08-04T20:16:00.110880" elapsed="18.124944"/>
+<status status="PASS" start="2024-08-08T19:36:14.780420" elapsed="38.654564"/>
 </test>
 <test id="s1-t2" name="Caso de Teste 02 - Pesquisa de um Produto" line="24">
 <kw name="Abrir o navegador" owner="amazon_resources" type="SETUP">
 <kw name="Open Browser" owner="SeleniumLibrary">
-<msg time="2024-08-04T20:16:18.238193" level="INFO">Opening browser 'firefox' to base url 'None'.</msg>
+<msg time="2024-08-08T19:36:53.439505" level="INFO">Opening browser 'firefox' to base url 'None'.</msg>
+<msg time="2024-08-08T19:36:54.076771" level="WARN">The geckodriver version (0.34.0) detected in PATH at C:\Users\SevenProGion\AppData\Local\Programs\Python\Python311\Scripts\geckodriver.exe might not be compatible with the detected firefox version (129.0.0.2295); currently, geckodriver 0.35.0 is recommended for firefox 129.*, so it is advised to delete the driver in PATH and retry</msg>
 <arg>browser=${BROSWER}</arg>
 <doc>Opens a new browser instance to the optional ``url``.</doc>
-<status status="PASS" start="2024-08-04T20:16:18.238193" elapsed="5.195761"/>
+<status status="PASS" start="2024-08-08T19:36:53.434984" elapsed="6.846534"/>
 </kw>
 <kw name="Maximize Browser Window" owner="SeleniumLibrary">
 <doc>Maximizes current browser window.</doc>
-<status status="PASS" start="2024-08-04T20:16:23.433954" elapsed="0.266853"/>
+<status status="PASS" start="2024-08-08T19:37:00.281518" elapsed="0.279636"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:18.236824" elapsed="5.464983"/>
+<status status="PASS" start="2024-08-08T19:36:53.434984" elapsed="7.126170"/>
 </kw>
 <kw name="Acessar a home page do site Amazon.com.br" owner="amazon_resources">
 <kw name="Go To" owner="SeleniumLibrary">
-<msg time="2024-08-04T20:16:23.701807" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
+<msg time="2024-08-08T19:37:00.566161" level="INFO">Opening url 'https://www.amazon.com.br'</msg>
 <arg>url=${URL}</arg>
 <doc>Navigates the current browser window to the provided ``url``.</doc>
-<status status="PASS" start="2024-08-04T20:16:23.701807" elapsed="9.760979"/>
+<status status="PASS" start="2024-08-08T19:37:00.566161" elapsed="31.316750"/>
 </kw>
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=${MENU_ELETRONICOS}</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-08-04T20:16:33.462786" elapsed="0.041854"/>
+<status status="PASS" start="2024-08-08T19:37:31.882911" elapsed="0.058615"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:23.701807" elapsed="9.802833"/>
+<status status="PASS" start="2024-08-08T19:37:00.561154" elapsed="31.380372"/>
 </kw>
 <kw name="Digitar o nome de produto &quot;Xbox Series S&quot; no campo de pesquisa" owner="amazon_resources" source_name="Digitar o nome de produto &quot;${PRODUTO}&quot; no campo de pesquisa">
 <kw name="Input Text" owner="SeleniumLibrary">
-<msg time="2024-08-04T20:16:33.505640" level="INFO">Typing text 'Xbox Series S' into text field 'twotabsearchtextbox'.</msg>
+<msg time="2024-08-08T19:37:31.945248" level="INFO">Typing text 'Xbox Series S' into text field 'twotabsearchtextbox'.</msg>
 <arg>locator=twotabsearchtextbox</arg>
 <arg>text=${PRODUTO}</arg>
 <doc>Types the given ``text`` into the text field identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-04T20:16:33.505640" elapsed="0.103368"/>
+<status status="PASS" start="2024-08-08T19:37:31.941526" elapsed="0.185070"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:33.505640" elapsed="0.103368"/>
+<status status="PASS" start="2024-08-08T19:37:31.941526" elapsed="0.185070"/>
 </kw>
 <kw name="Clicar no botão de pesquisa" owner="amazon_resources">
 <kw name="Click Element" owner="SeleniumLibrary">
-<msg time="2024-08-04T20:16:33.610104" level="INFO">Clicking element 'nav-search-submit-button'.</msg>
+<msg time="2024-08-08T19:37:32.131002" level="INFO">Clicking element 'nav-search-submit-button'.</msg>
 <arg>locator=nav-search-submit-button</arg>
 <doc>Click the element identified by ``locator``.</doc>
-<status status="PASS" start="2024-08-04T20:16:33.610104" elapsed="2.460270"/>
+<status status="PASS" start="2024-08-08T19:37:32.129814" elapsed="7.518144"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:33.610104" elapsed="2.460270"/>
+<status status="PASS" start="2024-08-08T19:37:32.129814" elapsed="7.520845"/>
 </kw>
 <kw name="Verificar o resultado da pesquisa se está listando o produto &quot;Xbox Series S&quot;" owner="amazon_resources" source_name="Verificar o resultado da pesquisa se está listando o produto &quot;${PRODUTO}&quot;">
 <kw name="Wait Until Element Is Visible" owner="SeleniumLibrary">
 <arg>locator=//span[@class='a-color-state a-text-bold'][contains(.,'"${PRODUTO}"')]</arg>
 <doc>Waits until the element ``locator`` is visible.</doc>
-<status status="PASS" start="2024-08-04T20:16:36.071601" elapsed="0.140866"/>
+<status status="PASS" start="2024-08-08T19:37:39.650659" elapsed="0.264890"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:36.071601" elapsed="0.140866"/>
+<status status="PASS" start="2024-08-08T19:37:39.650659" elapsed="0.264890"/>
 </kw>
 <kw name="Fechar o navegador" owner="amazon_resources" type="TEARDOWN">
 <kw name="Capture Page Screenshot" owner="SeleniumLibrary">
-<msg time="2024-08-04T20:16:36.469047" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-5.png"&gt;&lt;img src="selenium-screenshot-5.png" width="800px"&gt;&lt;/a&gt;</msg>
+<msg time="2024-08-08T19:37:40.347266" level="INFO" html="true">&lt;/td&gt;&lt;/tr&gt;&lt;tr&gt;&lt;td colspan="3"&gt;&lt;a href="selenium-screenshot-2.png"&gt;&lt;img src="selenium-screenshot-2.png" width="800px"&gt;&lt;/a&gt;</msg>
 <doc>Takes a screenshot of the current page and embeds it into a log file.</doc>
-<status status="PASS" start="2024-08-04T20:16:36.213491" elapsed="0.255556"/>
+<status status="PASS" start="2024-08-08T19:37:39.915549" elapsed="0.431717"/>
 </kw>
 <kw name="Close Browser" owner="SeleniumLibrary">
 <doc>Closes the current browser.</doc>
-<status status="PASS" start="2024-08-04T20:16:36.469047" elapsed="3.242718"/>
+<status status="PASS" start="2024-08-08T19:37:40.347266" elapsed="3.408423"/>
 </kw>
-<status status="PASS" start="2024-08-04T20:16:36.212467" elapsed="3.499298"/>
+<status status="PASS" start="2024-08-08T19:37:39.915549" elapsed="3.840140"/>
 </kw>
 <doc>Esse teste Verifica a busca de um produto</doc>
 <tag>busca_produtos</tag>
 <tag>lista_busca</tag>
-<status status="PASS" start="2024-08-04T20:16:18.236824" elapsed="21.474941"/>
+<status status="PASS" start="2024-08-08T19:36:53.434984" elapsed="50.320705"/>
 </test>
 <doc>Essa suite testa o  site de Amazon.com.br</doc>
-<status status="PASS" start="2024-08-04T20:15:59.916907" elapsed="39.795857"/>
+<status status="PASS" start="2024-08-08T19:36:14.320359" elapsed="89.437436"/>
 </suite>
 <statistics>
 <total>
@@ -195,5 +197,7 @@ e Verifica a categoria Computadores e Informática</doc>
 </suite>
 </statistics>
 <errors>
+<msg time="2024-08-08T19:36:18.502951" level="WARN">The geckodriver version (0.34.0) detected in PATH at C:\Users\SevenProGion\AppData\Local\Programs\Python\Python311\Scripts\geckodriver.exe might not be compatible with the detected firefox version (129.0.0.2295); currently, geckodriver 0.35.0 is recommended for firefox 129.*, so it is advised to delete the driver in PATH and retry</msg>
+<msg time="2024-08-08T19:36:54.076771" level="WARN">The geckodriver version (0.34.0) detected in PATH at C:\Users\SevenProGion\AppData\Local\Programs\Python\Python311\Scripts\geckodriver.exe might not be compatible with the detected firefox version (129.0.0.2295); currently, geckodriver 0.35.0 is recommended for firefox 129.*, so it is advised to delete the driver in PATH and retry</msg>
 </errors>
 </robot>
